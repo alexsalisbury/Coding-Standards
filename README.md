@@ -237,9 +237,9 @@ Example:
 ```
 28. Always apply C# comment-blocks (///) to public, protected, and internal declarations.
 29. Only use C# comment-blocks for documenting the API.
-30. Always include <summary> comments. Include &lt;param&gt;, &ltreturn&gt;, and &ltexception&gt; comment
+30. Always include <summary> comments. Include &lt;param&gt;, &lt;return&gt;, and &lt;exception&gt; comment
 sections where applicable.
-31. Include &ltsee cref=””/&gt; and &ltseeAlso cref=””/&gt; where possible.
+31. Include &lt;see cref=””/&gt; and &lt;seeAlso cref=””/&gt; where possible.
 32. Always add CDATA tags to comments containing code and other embedded markup in order to avoid
 encoding issues.
 Example:
