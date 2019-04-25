@@ -89,7 +89,7 @@ the sake of Abstraction.”
 |Generics | Prefer Generic Types over standard or strong-typed classes. |
 |Properties | Never prefix with Get or Set. |
 |Methods | Use a maximum of 7 parameters. |
-|base and this | Use only in constructors or within an override. |
+|base | Use only in constructors or within an override. |
 |Ternary conditions | Avoid complex conditions. |
 |foreach statements | Do not modify enumerated items within a foreach statement. |
 |Conditionals | Avoid evaluating Boolean conditions against true or false. No embedded assignment. Avoid embedded method invocation. |
@@ -155,8 +155,7 @@ My.StringUtilities
 | Generic Class & Generic Parameter Type |Always use a single capital letter, such as T or K. Example: ``` public class FifoStack<T> { public void Push(<T> obj) {…} public <T> Pop() {…} } ``` |
 |Method | Pascal Case. Try to use a Verb or Verb-Object pair. Example: ``` public void Execute() {…} private string GetAssemblyVersion(Assembly target) {…} ``` |
 |Property | Pascal Case. Property name should represent the entity it returns. Never prefix property names with “Get” or “Set”. Example: ```public string Name { get{…} set{…} } ``` |
-|Field (Public, Protected, or Internal) | Pascal Case. Avoid using non-private Fields! Use Properties instead. Example: ``` public string Name; protected IList InnerList; ``` |
-|Field (Private) | Camel Case and DO NOT prefix with a single underscore (_) character. Example: ``` private string name; ``` |
+|Field | Camel Case and DO NOT prefix with a single underscore (_) character. Example: ``` private string name; ``` |
 |Constant or Static Field | Treat like a Field. Choose appropriate Field access-modifier above. |
 |Enum | Pascal Case (both the Type and the Options). Add the FlagsAttribute to bit-mask multiple options. Example: ``` public enum CustomerTypes { Consumer, Commercial } ``` |
 |Delegate or Event | Treat as a Field. Choose appropriate Field access-modifier above. Example: ``` public event EventHandler LoadPlugin; ``` |
