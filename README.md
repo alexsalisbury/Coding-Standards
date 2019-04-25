@@ -54,7 +54,6 @@ the sake of Abstraction.”
 ### Naming Conventions Quick Guide
 “c” = camelCase
 “P” = PascalCase
-“_” = Prefix with _Underscore
 “x” = Not Applicable.
 
 |Identifier | Public | Protected | Internal | Private | Notes |
@@ -68,9 +67,9 @@ the sake of Abstraction.”
 |Generic Class | P | P | P | P | Use T or K as Type identifier. |
 |Method | P | P | P | P | Use a Verb or Verb-Object pair. |
 |Property | P | P | P | P | Do not prefix with Get or Set. |
-|Field | P | P | P | _c | Only use Private fields. No Hungarian Notation! |
-|Constant | P | P | P | _c | |
-|Static Field | P | P | P | _c | Only use Private fields. |
+|Field | P | P | P | c | Only use Private fields. No Hungarian Notation! |
+|Constant | P | P | P | c | |
+|Static Field | P | P | P | c | Only use Private fields. |
 |Enum | P | P | P | P | Options are also PascalCase. |
 |Delegate | P | P | P | P | |
 |Event | P | P | P | P | |
@@ -157,7 +156,7 @@ My.StringUtilities
 |Method | Pascal Case. Try to use a Verb or Verb-Object pair. Example: ``` public void Execute() {…} private string GetAssemblyVersion(Assembly target) {…} ``` |
 |Property | Pascal Case. Property name should represent the entity it returns. Never prefix property names with “Get” or “Set”. Example: ```public string Name { get{…} set{…} } ``` |
 |Field (Public, Protected, or Internal) | Pascal Case. Avoid using non-private Fields! Use Properties instead. Example: ``` public string Name; protected IList InnerList; ``` |
-|Field (Private) | Camel Case and prefix with a single underscore (_) character. Example: ``` private string _name; ``` |
+|Field (Private) | Camel Case and DO NOT prefix with a single underscore (_) character. Example: ``` private string name; ``` |
 |Constant or Static Field | Treat like a Field. Choose appropriate Field access-modifier above. |
 |Enum | Pascal Case (both the Type and the Options). Add the FlagsAttribute to bit-mask multiple options. Example: ``` public enum CustomerTypes { Consumer, Commercial } ``` |
 |Delegate or Event | Treat as a Field. Choose appropriate Field access-modifier above. Example: ``` public event EventHandler LoadPlugin; ``` |
