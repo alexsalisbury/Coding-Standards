@@ -67,7 +67,7 @@ the sake of Abstraction.”
 |Generic Class | P | P | P | P | Use T or K as Type identifier. |
 |Method | P | P | P | P | Use a Verb or Verb-Object pair. |
 |Property | P | P | P | P | Do not prefix with Get or Set. |
-|Field | P | P | P | c | Only use Private fields. No Hungarian Notation! |
+|Field | x | x | x | c | Only use Private fields. No Hungarian Notation! |
 |Constant | P | P | P | c | |
 |Static Field | P | P | P | c | Only use Private fields. |
 |Enum | P | P | P | P | Options are also PascalCase. |
